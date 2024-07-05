@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DriverAccountFXMLController">
+       <Label layoutX="190" layoutY="30"  fx:id="Titellabel" />
+        
+        
+        <Label layoutX="400" layoutY="100" fx:id="NewDriverUsernameLabel" text="اسم السائق" />  
+        <TextField layoutX="200" layoutY="100" fx:id="NewDriversernameField" promptText="اسم المستخدم"/>
+        
+        <Label layoutX="400" layoutY="140" fx:id="NewDriverPhoneNoLabel" text="رقم الجوال" />  
+        <TextField layoutX="200" layoutY="140" fx:id="NewDriverPhNopasswordField" promptText="رقم الجوال"/>
+        
+        
+        <Label layoutX="400" layoutY="180" fx:id="NewDriverpasswordLabel" text="كلمة المرور" />  
+        <TextField layoutX="200" layoutY="180" fx:id="NewDriverpasswordField" promptText="كلمة المرور"/>
+        
+        <Label layoutX="400" layoutY="220" fx:id="NewDriverLocationLabel" text="العنوان" />  
+        <TextField layoutX="200" layoutY="220" fx:id="NewDriverLocationField" promptText="العنوان"/>
+        
+        <Label layoutX="400" layoutY="260" fx:id="deliveryAreaLabel" text="منطقة التوصيل" />  
+        <TextField layoutX="200" layoutY="260" fx:id="deliveryAreaField" promptText="منطقة التوصيل"/>
+        
+        <Label layoutX="400" layoutY="300" fx:id="deliverypriceLabel" text="سعر التوصيل" />  
+        <TextField layoutX="200" layoutY="300" fx:id="deliveryPriceField" promptText="سعر التوصيل"/>
+        
+        <Button layoutX="250" layoutY="330" text="تسجيل" onAction="#NewDriverButtonAction" fx:id="newDriverBTN" />
+        
+        <Label layoutX="400" layoutY="360" fx:id="AccountEmptyLabel" />
+         
+</AnchorPane>

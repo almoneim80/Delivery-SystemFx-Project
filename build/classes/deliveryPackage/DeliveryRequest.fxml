@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.collections.*?> 
+<?import javafx.geometry.Insets?>
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+
+ <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeliveryRequestController">
+<Label layoutX="420" layoutY="30"  fx:id="Titellabel" />
+     <Button layoutX="440" layoutY="80" text="انشاء طلب جديد" onAction="#CtreatRequestBTNAction" fx:id="CtreatRequestBTN" />    
+<Label layoutX="470" layoutY="130" text="الطلبات السابقة"  />
+ <TableView fx:id="tableView" layoutX="0" layoutY="150" prefHeight="200.0" prefWidth="600">
+<columns>
+        <TableColumn prefWidth="100" text="السائق" fx:id="DriverId"/>
+        <TableColumn prefWidth="100" text="السعر" fx:id="PriceId" />
+        <TableColumn prefWidth="100" text="السعر" fx:id="HistoryId" />
+        <TableColumn prefWidth="100" text="الموقع المراد" fx:id="Goal" />
+        <TableColumn prefWidth="100" text="الموقع الحالي" fx:id="Current" />
+         <TableColumn prefWidth="100" text="رقم الطلب" fx:id="Id" />
+    </columns>
+    </TableView>
+</AnchorPane>

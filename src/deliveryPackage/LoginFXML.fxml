@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginFXMLController">
+    <Label layoutX="190" layoutY="60"  fx:id="Titellabel"/>
+    
+    <Label layoutX="400" layoutY="150" fx:id="LoginUsernameLabel" text="اسم المستخدم" />  
+    <TextField layoutX="200" layoutY="150" fx:id="LoginUsernameField" promptText="اسم المستخدم"/>
+        
+    <Label layoutX="400" layoutY="190" fx:id="LoginPasswordPhoneNoLabel" text="كلمة المرور" />  
+    <TextField layoutX="200" layoutY="190" fx:id="LoginpasswordField" promptText="كلمة المرور"/>
+    
+    <Button layoutX="250" layoutY="230" text="دخــــول" onAction="#LoginButtonAction" fx:id="LoginBTN" />
+    <Button layoutX="230" layoutY="260" text="مستخــدم جديــد" onAction="#NewAccountButtonAction" fx:id="RegesterBTN" />
+    
+    <Label layoutX="230" layoutY="320" fx:id="compltetInfoLabel" />  
+</AnchorPane>

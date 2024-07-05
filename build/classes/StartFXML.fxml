@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="600" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StartFXMLController">
+    <children>
+        <Label layoutX="250" layoutY="80"  fx:id="StatrTitellabel" text="Delivery System" />
+        <Button layoutX="340" layoutY="160" text="عمــيل" onAction="#handleClintBTNAction" fx:id="ClientBTN" />
+        <Button layoutX="210" layoutY="160" text="سائـــق" onAction="#handleDriverBTNAction" fx:id="DriverBTN" />
+    </children>
+</AnchorPane>
